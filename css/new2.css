@@ -39,7 +39,7 @@ h6 {
   font: 12px/1.5em "Cabin", Helvetica, Arial, sans-serif;
 }
 a {
-  color: #e74b34;
+  color: #e74b34;/
   text-decoration: none;
 }
 a:hover{
@@ -118,7 +118,6 @@ hr {
   background: transparent url('../images/icon-sosio/head logo.png') left center no-repeat;
   display: block;
   height: 63px;
-  min-width: 100%;
 }
 .list-top-contact-info{
   float: right;
@@ -263,7 +262,7 @@ color : #ffc240;
   background-clip: padding-box;
   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-  padding: 2em 1.5em 1em 1.5em;
+  padding: 2em 3.5em 1em 1.5em;
   margin: 1.5em 0;
   list-style: none;
 }
@@ -278,7 +277,7 @@ color : #ffc240;
     overflow: visible;
     cursor: pointer;
     border-radius: 50px;
-z-index: 100;
+    z-index: 100;
 }
 
 header img {
@@ -543,17 +542,11 @@ text-align: right;
   }
   .form-single-field input[type="email"], .form-single-field input[type="text"]{
     height: 50px;
-    width: 120%;
-    margin-right: 100px;
+    width: 10%;
     padding-right: 10px;
   }
   .form-single-field>p input[type="submit"]{
-    margin-left: 50px;
-    margin-right: 90px;
-    padding-right: 60px;
-    padding-left: 5px;
-    float: right;
-    margin: auto;
+    display: block;
   }
 }
 
@@ -582,7 +575,8 @@ text-align: right;
     
   }
   .form-single-field input[type="text"]{
-    margin-right: 0.2px;
+    margin-right: 0.2px;{
+    margin-right: 50px;
   }
   .form-single-field>p{
     margin-left: 0.2px;
@@ -597,8 +591,7 @@ text-align: right;
     margin-bottom: 10px;
     width: 95%; 
   }
-  .list-top-contact-info{
-    margin-right: 50px;
+  
   }
   .list-customers li img{
     margin: 2em 0.50em;
@@ -609,11 +602,113 @@ text-align: right;
   .list-top-contact-info li{
     border-right: 0px;
   }
+  #left_footer article{
+    padding: 0px;
+  }
+  #left_footer article a{
+    padding-bottom: 30px;
+  }
+  #news_box{
+    margin: -12%;
+    margin-top: 1%;
+  }
+  .form-single-field input[type="email"], .form-single-field input[type="text"]{
+    padding-left: 6px;
+  }
+  .form-single-field>p input[type="submit"]{
+    margin-right: -81%;
+    height: 36px;
+
+  }
+  .form-single-field>p{
+    width: 58%;
+    margin-right: 167px;
+  }
+  .logo-container-mobile{
+    margin-top: -2%;
+    margin-bottom: 0%;
+    min-width: 100%;
+  }
+  .list-customers li img{
+    margin-left: -26% ;
+    margin-top: -1%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 14%;
+    padding-right: 3%;
+    padding-left: 13%;
+    padding-top: 0%;
+  }
+  #left_footer{
+    margin-bottom: 0%
+  }
+  .cycle-next{
+    display: none;
+  }
+  .list-top-contact-info{
+    margin-left: auto;
+  }
 }
 
 @media screen and (max-width: 320px){
  .list-top-contact-info li{
   text-align: center;
-  padding-left: 0px;
+  margin-left: -51px;
  }
+ #left_footer article{
+    padding: 0px;
+  }
+  input, button, select, textarea{
+    padding: 0px;
+    margin-top: 30px;  
+  }
+  .img-responsive{
+    padding-bottom: 40px;
+  }
 }
+
+@media screen and (max-width: 768px){
+  .form-single-field input[type="email"], .form-single-field input[type="text"]{
+    width: 113%;
+  }
+  .form-single-field>p input[type="submit"]{
+    padding-right: 69px;
+  }
+  .form-single-field>p{
+    width: 55%;
+  }
+  .list-customers li img{
+    margin-left: -0.9em;
+  }
+  .button-top-cta{
+
+  }
+  }
+
+@media screen and (max-width: 1024px){
+  .list-top-contact-info li{
+    border-right: 0px;
+  }
+  .form-single-field>p input[type="submit"]{
+    padding-right: 69px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  #news_box{
+    margin: -12%;
+    margin-top: -4%;
+    margin-bottom: -2%;
+    margin-left: -17%;
+    margin-right: -16%;
+  }
+}
+@media only screen and (max-width: 959px) and (min-width: 768px){
+  .button-top-cta{
+    margin-right: -151px;
+  }
+  .list-top-contact-info{
+    margin-top: -33px;
+  }
+}
+

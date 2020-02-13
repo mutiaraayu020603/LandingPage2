@@ -1179,8 +1179,6 @@ hr {
   margin-left: auto;
 }
 .row {
-  margin-right: -15px;
-  margin-left: -15px;
 }
 .row-no-gutters {
   margin-right: 0;
@@ -2094,7 +2092,7 @@ a.badge:focus {
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .logo-container-mobile,
     .top-container-mobile{
-        width: 100%;
+        width: 80%;
         display: block;
         float: none;
     }
